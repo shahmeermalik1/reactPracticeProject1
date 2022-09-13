@@ -1,13 +1,143 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: #FDF5DF;
+    font-family: Roboto ;
+    
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+    background-color: #5EBEC4;
+    font-family: roboto;
 }
+
+.navbar-brand{
+    font-size: x-large;
+    font-weight: 700;
+    color: #F92C85;
+    
+}
+
+.navbar-brand:hover{
+    color: #FDF5DF;
+    
+}
+
+.nav-link{
+    color: #FDF5DF;
+    font-weight: 550;
+}
+
+.nav-link:hover{
+   color:  #F92C85;
+}
+
+.btn1{
+    background-color: #FDF5DF;
+    border: 3px solid #5EBEC4;
+    color: #5EBEC4;
+    font-family: roboto;
+    padding: 10px 80px;
+    border-radius: 0%;
+}
+
+.btn1:hover{
+    background-color: #5EBEC4;
+    border: 3px solid #5EBEC4;
+    color: #FDF5DF;
+    font-family: roboto;
+    padding: 10px 80px;
+}
+
+
+.btn2{
+    background-color: #5EBEC4;
+    border: 3px solid #5EBEC4;
+    color: #FDF5DF;
+    font-family: roboto;
+    padding: 10px 80px;
+    border-radius: 0;
+}
+
+.btn2:hover{
+    background-color: #F92C85;
+    border: 3px solid #F92C85;
+    color: #FDF5DF;
+    font-family: roboto;
+    padding: 10px 80px;
+    border-radius: 0;
+}
+
+.row1{
+    background-image: url('../public/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading{
+    font-size: 50px;
+}
+
+.footer-container{
+position: fixed;
+bottom: 0%;
+background-color: #5EBEC4;
+
+}
+
+footer{
+    background-color: #5EBEC4 !important;
+    color: #F92C85;
+
+    
+}
+
+.footer-link{
+    text-decoration: none;
+    color: #FDF5DF;
+}
+
+
+.notfoundrow{
+    background-color: #FDF5DF ;
+    margin-top: 60px;
+    color: #F92C85;
+}
+
+.about-us-head{
+    color: #F92C85;
+    font-weight: 700;
+    font-style: oblique;
+}
+
+.about-us-txt{
+    font-weight: 100 ;
+    font-size: larger;
+}
+.search-btn{
+    background-color: #5EBEC4;
+    color: #FDF5DF;
+}
+
+.search-btn:hover{
+    background-color: #F92C85;
+    border-color: #F92C85;
+    color: #FDF5DF;
+
+}
+
+.headlines-txt{
+    color: #FDF5DF;
+    background-color: #5EBEC4;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.card{
+    background-color: #5EBEC4;
+}
+
+.card-btn{
+    color: #FDF5DF;
+    background-color: #F92C85;
+}
+

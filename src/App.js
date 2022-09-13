@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './index.css'
+import Navbar1 from "./components/Navbar";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Routes
+} from "react-router-dom";
+import Home from "./components/pages/Home";
+import Footer1 from "./components/Footer";
+import About from "./components/pages/About";
+import Notfound from "./components/pages/Notfound";
+import UserResults from "./components/users/UserResults";
+import {FinderProvider} from "./context/FinderContext";
+import Search from "./components/pages/Search";
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FinderProvider>
+    <Router>
+        <Navbar1 />
+        <Routes>
+        <Route path="/search" element={<Search/>}/>
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/" element={<Notfound/>} />
+        <Route path="/*" element={<Notfound/>} />
+        </Routes>
+      <Footer1 />
+   </Router>
+    </FinderProvider>
+   
   );
 }
 
